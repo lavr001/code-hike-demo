@@ -4,14 +4,21 @@ You used two Amplify UI components, `Heading` and `Button`. You could also conve
 
 #### Open src/App.js and make the following changes:
 
-<CH.Scrollycoding>
+<CH.Scrollycoding lineNumbers={true} showCopyButton={true}>
 
 ### Step 1
 
 Add the `Text`, `TextField`, `View` components to the imported components from Amplify UI:
 
 ```js app.js mark=1:1
-import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-amplify/ui-react';
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Text,
+  TextField,
+  View,
+} from '@aws-amplify/ui-react';
 
 <div style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -50,7 +57,14 @@ import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-
 Replace `div`s with `View`s in your App component:
 
 ```js app.js mark=3,25
-import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-amplify/ui-react';
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Text,
+  TextField,
+  View,
+} from '@aws-amplify/ui-react';
 
 <View style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -89,7 +103,14 @@ import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-
 Replace `input`s with `TextField`s in your App component:
 
 ```js app.js mark=9,15
-import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-amplify/ui-react';
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Text,
+  TextField,
+  View,
+} from '@aws-amplify/ui-react';
 
 <View style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -128,7 +149,14 @@ import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-
 Replace the `p` tags with `Text`:
 
 ```js app.js mark=26:27
-import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-amplify/ui-react';
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Text,
+  TextField,
+  View,
+} from '@aws-amplify/ui-react';
 
 <View style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>

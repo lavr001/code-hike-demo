@@ -1,0 +1,47 @@
+### Session Tracking
+
+You can track the session both in a web app or a React Native app by using Analytics. A web session can be defined in different ways. To keep it simple we define a web session as being active when the page is not hidden and inactive when the page is hidden. A session in a React Native app is active when the app is in the foreground and inactive when the app is in the background.
+
+For example:
+
+<CH.Scrollycoding>
+
+### Step 1
+
+`enable` property (REQUIRED, turn on/off the auto tracking)
+
+```js app.js focus=2
+Analytics.autoTrack('session', {
+  enable: true,
+  attributes: {
+    attr: 'attr',
+  },
+  provider: 'AWSPinpoint',
+});
+```
+
+---
+
+### Step 2
+
+`attributes` property (OPTIONAL, the attributes of the event, you can either pass an object or a function which allows you to define dynamic attributes)
+
+```js app.js focus=3:5
+
+```
+
+---
+
+### Step 3
+
+`provider` property (OPTIONAL, the service provider, by default is the Amazon Pinpoint)
+
+```js app.js focus=6
+
+```
+
+</CH.Scrollycoding>
+
+When the page is loaded, the Analytics module will send an event to the Amazon Pinpoint Service.
+
+<div style={{ height: 999 }} />

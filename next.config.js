@@ -1,4 +1,7 @@
 const theme = require('shiki/themes/nord.json');
+// const theme = require('shiki/themes/dark-plus.json');
+// const theme = require('shiki/themes/github-dark.json');
+// const theme = require('shiki/themes/github-light.json');
 const { remarkCodeHike } = require('@code-hike/mdx');
 
 const withMDX = require('@next/mdx')({
