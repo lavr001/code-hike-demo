@@ -1,8 +1,58 @@
-## Add the Amplify UI Authenticator component
+# Add authentication
+
+The next feature you will be adding is authentication.
+
+## Authentication with Amplify
+
+Amplify uses Amazon Cognito as the main authentication provider. Amazon Cognito is a robust user directory service that handles user registration, authentication, account recovery & other operations. In this tutorial, you'll learn how to add authentication to your application using Amazon Cognito and username/password login.
+
+## Create authentication service
+
+To add authentication to your app, run this command:
+
+```
+amplify add auth
+```
+
+Select the defaults for the following prompts:
+
+```
+? Do you want to use the default authentication and security configuration? Default configuration
+Warning: you will not be able to edit these selections.
+? How do you want users to be able to sign in? Username
+? Do you want to configure advanced settings? No, I am done.
+```
+
+To deploy the service, run the push command:
+
+```
+amplify push
+
+```
+
+Now, the authentication service has been deployed and you can start using it. To view the deployed services in your project at any time, go to Amplify Console by running the following command:
+
+```
+amplify console
+```
+
+## Create login UI
+
+Creating a login flow can be quite difficult and time consuming to get right. Luckily, Amplify UI has an authentication component that provides an entire authentication flow for you, using the configuration you specified in aws-exports.js.
+
+### Install Amplify UI
+
+The @aws-amplify/ui-react package includes React specific UI components you'll use to build your app. Install it with this:
+
+```
+npm install @aws-amplify/ui-react
+```
+
+### Add the Amplify UI Authenticator component
 
 Open <b>src/App.js</b> and make the following changes:
 
-<CH.Scrollycoding>
+<CH.Scrollycoding lineNumbers={true} showCopyButton={true}>
 
 ### Step 1
 
