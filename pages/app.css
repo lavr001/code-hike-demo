@@ -100,3 +100,11 @@ navbar .side_item:first-child {
 .ch-scrollycoding-sticker {
   width: var(--ch-scrollycoding-sticker-width, 520px);
 }
+
+.ch-scrollycoding-step-content {
+  min-height: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
