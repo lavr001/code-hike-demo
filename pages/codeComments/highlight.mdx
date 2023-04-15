@@ -10,11 +10,9 @@ For example:
 
 <CH.Scrollycoding lineNumbers={true} showCopyButton={true}>
 
-### Step 1
-
 `enable` property (Required, turn on/off the auto tracking)
 
-```js app.js focus=2
+```js app.js mark=2
 Analytics.autoTrack('session', {
   enable: true,
   attributes: {
@@ -26,21 +24,17 @@ Analytics.autoTrack('session', {
 
 ---
 
-### Step 2
-
 `attributes` property (Optional, the attributes of the event, you can either pass an object or a function which allows you to define dynamic attributes)
 
-```js app.js focus=3:5
+```js app.js mark=3:5
 
 ```
 
 ---
 
-### Step 3
-
 `provider` property (Optional, the service provider, by default is the Amazon Pinpoint)
 
-```js app.js focus=6
+```js app.js mark=6
 
 ```
 
