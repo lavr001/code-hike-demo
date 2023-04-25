@@ -11,7 +11,6 @@ body {
   font-family: Amazon Ember, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
-  /* --ch-scrollycoding-sticker-width: 520px; */
   --ch-scrollycoding-sticker-width: 35vw;
 }
 
@@ -114,10 +113,6 @@ navbar .side_item:first-child {
   cursor: pointer;
   background-color: #f1f1eb;
 }
-
-/* .ch-code-multiline-mark {
-  background: rgba(255, 255, 255, 0.1) !important;
-} */
 
 .bold {
   font-weight: bold;
