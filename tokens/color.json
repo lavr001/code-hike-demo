@@ -1,0 +1,12 @@
+{
+  "color": {
+    "button": {
+      "background": {
+        "value": "#0070f3"
+      },
+      "text": {
+        "value": "#ffffff"
+      }
+    }
+  }
+}

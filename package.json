@@ -14,5 +14,8 @@
     "next": "13.1.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
   }
 }
