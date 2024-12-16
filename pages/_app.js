@@ -1,7 +1,8 @@
 import "@code-hike/mdx/dist/index.css";
 import "./app.css";
+import "../styles/tokens.css";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   const headerItems = {
     left: ["Amplify Dev Center", "Docs", "Learn", "UI Library", "Contribute"],
     right: ["About AWS Amplify", "Pricing"],
@@ -70,6 +71,6 @@ function MyApp({ Component, pageProps }) {
       </navbar>
     </>
   );
-}
+};
 
 export default MyApp;
