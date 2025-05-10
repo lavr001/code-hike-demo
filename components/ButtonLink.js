@@ -7,8 +7,8 @@ const ButtonLink = ({
   id,
   tooltipText,
   tooltipActive,
-  isFirstTooltip, // To know if this is the first tooltip for 'Next' button
-  isLastTooltip, // To know if this is the last tooltip for 'Got it!' button
+  isFirstTooltip,
+  isLastTooltip,
 }) => {
   return (
     <div
