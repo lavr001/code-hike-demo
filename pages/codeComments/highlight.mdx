@@ -1,3 +1,9 @@
+import Link from "next/link";
+
+<div style={{ marginBottom: "2rem" }}>
+  <Link href="/">&larr; Home</Link>
+</div>
+
 ## Automatically track sessions
 
 Analytics Auto Tracking helps you to automatically track user behaviors like sessions start/stop, page view change and web events like clicking or mouseover.
@@ -13,12 +19,12 @@ For example:
 `enable` property (Required, turn on/off the auto tracking)
 
 ```js app.js mark=2
-Analytics.autoTrack('session', {
+Analytics.autoTrack("session", {
   enable: true,
   attributes: {
-    attr: 'attr',
+    attr: "attr",
   },
-  provider: 'AWSPinpoint',
+  provider: "AWSPinpoint",
 });
 ```
 

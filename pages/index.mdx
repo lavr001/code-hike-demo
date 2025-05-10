@@ -4,50 +4,97 @@ import ButtonLink from "../components/ButtonLink";
 
 ### Short code blocks
 
-<ButtonLink href="https://docs.amplify.aws/start/getting-started/auth/q/integration/react/#add-the-amplify-ui-authenticator-component">
+<ButtonLink
+  href="https://docs.amplify.aws/start/getting-started/auth/q/integration/react/#add-the-amplify-ui-authenticator-component"
+  id="amplify-docs-reference-button"
+  tooltipText="First, click here to see an example of an original AWS Amplify documentation page."
+  tooltipActive={props.showGuide && props.tooltipStep === 1}
+  isFirstTooltip={true}
+>
   Amplify Docs Reference
 </ButtonLink>
 
 Short, additive code blocks telling the learner what snippets to add to a file to get an effect.
 
-<ButtonLink href="/shortCode/highlight">Short code highlight</ButtonLink>
+<ButtonLink
+  href="/shortCode/highlight"
+  id="short-code-highlight-button"
+  tooltipText="Now, click here to see how the same content looks enhanced with Code Hike!"
+  tooltipActive={props.showGuide && props.tooltipStep === 2}
+  isLastTooltip={true}
+>
+  Short code highlight
+</ButtonLink>
 
 ### Inline code comments
 
-<ButtonLink href="https://docs.amplify.aws/lib/analytics/autotrack/q/platform/react-native/#session-tracking">
+<ButtonLink
+  href="https://docs.amplify.aws/lib/analytics/autotrack/q/platform/react-native/#session-tracking"
+  id="inline-code-comments-button"
+>
   Amplify Docs Reference
 </ButtonLink>
 
 Remove inline code comments outside codeblocks.
 
-<ButtonLink href="/codeComments/highlight">Inline code comments</ButtonLink>
+<ButtonLink
+  href="/codeComments/highlight"
+  id="inline-code-comments-highlight-button"
+>
+  Inline code comments
+</ButtonLink>
+{/* Tooltip for Inline code comments highlight will be handled by _app.js or a new component if needed */}
 
 ## Swap with highlight
 
 ### Long code blocks
 
-<ButtonLink href="https://docs.amplify.aws/start/getting-started/auth/q/integration/react/#bonus-use-amplify-ui-primitives">
+<ButtonLink
+  href="https://docs.amplify.aws/start/getting-started/auth/q/integration/react/#bonus-use-amplify-ui-primitives"
+  id="long-code-blocks-button"
+>
   Amplify Docs Reference
 </ButtonLink>
+{/* Tooltip for Long code blocks will be handled by _app.js or a new component if needed */}
 
 Long code blocks that are supposed to explain how to edit preceding code to get an effect.
 
-<ButtonLink href="/longCode/swapshighlights">
+<ButtonLink
+  href="/longCode/swapshighlights"
+  id="long-code-swaps-highlight-button"
+>
   Long code swaps with highlights
 </ButtonLink>
+{/* Tooltip for Long code swaps highlight will be handled by _app.js or a new component if needed */}
 
 ## Spotlight
 
 ### Console outputs
 
-<ButtonLink href="https://docs.amplify.aws/start/getting-started/setup/q/integration/react/#initialize-a-new-backend">
+<ButtonLink
+  href="https://docs.amplify.aws/start/getting-started/setup/q/integration/react/#initialize-a-new-backend"
+  id="console-outputs-button"
+>
   Amplify Docs Reference
 </ButtonLink>
+{/* Tooltip for Console outputs will be handled by _app.js or a new component if needed */}
 
 Terminal prompts for some information about the app, with the option to accept recommended values.
 
-<ButtonLink href="/consoleOutput/spotlight">
+<ButtonLink
+  href="/consoleOutput/spotlight"
+  id="console-output-spotlight-button"
+>
   Console output spotlight
 </ButtonLink>
+{/* Tooltip for Console output spotlight will be handled by _app.js or a new component if needed */}
 
 <div style={{ height: 999 }} />
+
+export default function Page(props) {
+  // The content of your MDX file is processed and passed as children here
+  // We are wrapping the MDX content with this default export
+  // and passing down the props from _app.js (showGuide, tooltipStep)
+  const { children } = props;
+  return <>{children}</>;
+}
