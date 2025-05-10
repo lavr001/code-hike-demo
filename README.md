@@ -23,12 +23,6 @@ To run this project locally:
     ```
 4.  Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deployment
-
-This project is deployed on Vercel and can be accessed here:
-
-[https://code-hike-demo.vercel.app/](https://code-hike-demo.vercel.app/)
-
 ## Technologies Used
 
 - **Next.js**: A React framework for production.
@@ -37,3 +31,9 @@ This project is deployed on Vercel and can be accessed here:
 - **Code Hike**: For creating interactive code walkthroughs.
 - **Style Dictionary**: A build system for creating cross-platform styles.
 - **Vercel**: For deployment.
+
+## Deployment
+
+This project is deployed on Vercel and can be accessed here:
+
+[https://code-hike-demo.vercel.app/](https://code-hike-demo.vercel.app/)
