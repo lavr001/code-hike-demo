@@ -43,7 +43,6 @@ Remove inline code comments outside codeblocks.
 >
   Inline code comments
 </ButtonLink>
-{/* Tooltip for Inline code comments highlight will be handled by _app.js or a new component if needed */}
 
 ## Swap with highlight
 
@@ -55,7 +54,6 @@ Remove inline code comments outside codeblocks.
 >
   Amplify Docs Reference
 </ButtonLink>
-{/* Tooltip for Long code blocks will be handled by _app.js or a new component if needed */}
 
 Long code blocks that are supposed to explain how to edit preceding code to get an effect.
 
@@ -65,7 +63,6 @@ Long code blocks that are supposed to explain how to edit preceding code to get 
 >
   Long code swaps with highlights
 </ButtonLink>
-{/* Tooltip for Long code swaps highlight will be handled by _app.js or a new component if needed */}
 
 ## Spotlight
 
@@ -77,7 +74,6 @@ Long code blocks that are supposed to explain how to edit preceding code to get 
 >
   Amplify Docs Reference
 </ButtonLink>
-{/* Tooltip for Console outputs will be handled by _app.js or a new component if needed */}
 
 Terminal prompts for some information about the app, with the option to accept recommended values.
 
@@ -87,14 +83,10 @@ Terminal prompts for some information about the app, with the option to accept r
 >
   Console output spotlight
 </ButtonLink>
-{/* Tooltip for Console output spotlight will be handled by _app.js or a new component if needed */}
 
 <div style={{ height: 999 }} />
 
 export default function Page(props) {
-  // The content of your MDX file is processed and passed as children here
-  // We are wrapping the MDX content with this default export
-  // and passing down the props from _app.js (showGuide, tooltipStep)
   const { children } = props;
   return <>{children}</>;
 }

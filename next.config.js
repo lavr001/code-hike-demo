@@ -1,10 +1,7 @@
-// const theme = require('shiki/themes/nord.json');
-// const theme = require('shiki/themes/light-plus.json');
-// const theme = require('shiki/themes/dark-plus.json');
-const theme = require('./dark-theme.json');
-const { remarkCodeHike } = require('@code-hike/mdx');
+const theme = require("./dark-theme.json");
+const { remarkCodeHike } = require("@code-hike/mdx");
 
-const withMDX = require('@next/mdx')({
+const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [[remarkCodeHike, { theme }]],
@@ -12,5 +9,5 @@ const withMDX = require('@next/mdx')({
 });
 
 module.exports = withMDX({
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 });

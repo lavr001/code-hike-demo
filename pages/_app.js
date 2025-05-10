@@ -4,11 +4,8 @@ import "../styles/tokens.css";
 import React, { useState, useEffect } from "react";
 import WelcomeModal from "../components/WelcomeModal";
 
-// Removed GuideProvider and useGuide imports
-
 const AppContent = ({ Component, pageProps }) => {
-  // State and handlers are now in MyAppWrapper, passed down or accessed globally
-  const { showGuide, tooltipStep } = pageProps; // Assuming these are passed if needed directly by Component
+  const { showGuide, tooltipStep } = pageProps;
 
   const headerItems = {
     left: ["UI Library", "Contribute"],
@@ -37,7 +34,7 @@ const AppContent = ({ Component, pageProps }) => {
         <div className="left">
           <div className="header_item logo-container">
             <img
-              src="/assets/amplify-logo.svg" // Corrected path if it was changed
+              src="/assets/amplify-logo.svg"
               alt="Amplify Logo"
               className="logo"
             />
@@ -89,7 +86,7 @@ const AppContent = ({ Component, pageProps }) => {
 const MyAppWrapper = ({ Component, pageProps }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showGuide, setShowGuide] = useState(false);
-  const [tooltipStep, setTooltipStep] = useState(0); // 0: no tooltip, 1: first, 2: second
+  const [tooltipStep, setTooltipStep] = useState(0);
 
   useEffect(() => {
     const firstVisit = localStorage.getItem("hasVisitedDemo");
@@ -97,7 +94,6 @@ const MyAppWrapper = ({ Component, pageProps }) => {
       setIsModalOpen(true);
     }
 
-    // Expose handlers to window for ButtonLink to use
     window.globalHandleNextTooltip = () => {
       setTooltipStep((prev) => prev + 1);
     };
@@ -110,7 +106,7 @@ const MyAppWrapper = ({ Component, pageProps }) => {
       delete window.globalHandleNextTooltip;
       delete window.globalHandleEndGuide;
     };
-  }, []); // Empty dependency array ensures this runs once and cleans up
+  }, []);
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -120,11 +116,10 @@ const MyAppWrapper = ({ Component, pageProps }) => {
   const handleStartGuide = () => {
     setIsModalOpen(false);
     setShowGuide(true);
-    setTooltipStep(1); // Start with the first tooltip
+    setTooltipStep(1);
     localStorage.setItem("hasVisitedDemo", "true");
   };
 
-  // Pass down showGuide and tooltipStep to the page component
   const enhancedPageProps = {
     ...pageProps,
     showGuide,
