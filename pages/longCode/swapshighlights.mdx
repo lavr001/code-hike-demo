@@ -1,3 +1,9 @@
+import Link from "next/link";
+
+<div style={{ marginBottom: "2rem" }}>
+  <Link href="/">&larr; Home</Link>
+</div>
+
 # Add authentication
 
 The next feature you will be adding is authentication.
@@ -68,7 +74,7 @@ import {
   Text,
   TextField,
   View,
-} from '@aws-amplify/ui-react';
+} from "@aws-amplify/ui-react";
 
 <div style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -77,16 +83,16 @@ import {
   </Button>
   <h2>Amplify Todos</h2>
   <input
-    onChange={(event) => setInput('name', event.target.value)}
+    onChange={(event) => setInput("name", event.target.value)}
     style={styles.input}
     value={formState.name}
-    placeholder='Name'
+    placeholder="Name"
   />
   <input
-    onChange={(event) => setInput('description', event.target.value)}
+    onChange={(event) => setInput("description", event.target.value)}
     style={styles.input}
     value={formState.description}
-    placeholder='Description'
+    placeholder="Description"
   />
   <button style={styles.button} onClick={addTodo}>
     Create Todo
@@ -114,7 +120,7 @@ import {
   Text,
   TextField,
   View,
-} from '@aws-amplify/ui-react';
+} from "@aws-amplify/ui-react";
 
 <View style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -123,16 +129,16 @@ import {
   </Button>
   <h2>Amplify Todos</h2>
   <input
-    onChange={(event) => setInput('name', event.target.value)}
+    onChange={(event) => setInput("name", event.target.value)}
     style={styles.input}
     value={formState.name}
-    placeholder='Name'
+    placeholder="Name"
   />
   <input
-    onChange={(event) => setInput('description', event.target.value)}
+    onChange={(event) => setInput("description", event.target.value)}
     style={styles.input}
     value={formState.description}
-    placeholder='Description'
+    placeholder="Description"
   />
   <button style={styles.button} onClick={addTodo}>
     Create Todo
@@ -160,7 +166,7 @@ import {
   Text,
   TextField,
   View,
-} from '@aws-amplify/ui-react';
+} from "@aws-amplify/ui-react";
 
 <View style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -169,16 +175,16 @@ import {
   </Button>
   <h2>Amplify Todos</h2>
   <TextField
-    onChange={(event) => setInput('name', event.target.value)}
+    onChange={(event) => setInput("name", event.target.value)}
     style={styles.input}
     value={formState.name}
-    placeholder='Name'
+    placeholder="Name"
   />
   <TextField
-    onChange={(event) => setInput('description', event.target.value)}
+    onChange={(event) => setInput("description", event.target.value)}
     style={styles.input}
     value={formState.description}
-    placeholder='Description'
+    placeholder="Description"
   />
   <button style={styles.button} onClick={addTodo}>
     Create Todo
@@ -206,7 +212,7 @@ import {
   Text,
   TextField,
   View,
-} from '@aws-amplify/ui-react';
+} from "@aws-amplify/ui-react";
 
 <View style={styles.container}>
   <Heading level={1}>Hello {user.username}</Heading>
@@ -215,16 +221,16 @@ import {
   </Button>
   <h2>Amplify Todos</h2>
   <TextField
-    onChange={(event) => setInput('name', event.target.value)}
+    onChange={(event) => setInput("name", event.target.value)}
     style={styles.input}
     value={formState.name}
-    placeholder='Name'
+    placeholder="Name"
   />
   <TextField
-    onChange={(event) => setInput('description', event.target.value)}
+    onChange={(event) => setInput("description", event.target.value)}
     style={styles.input}
     value={formState.description}
-    placeholder='Description'
+    placeholder="Description"
   />
   <button style={styles.button} onClick={addTodo}>
     Create Todo
